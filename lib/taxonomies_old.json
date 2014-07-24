@@ -1,0 +1,947 @@
+{
+	"specialty-groups": [
+		{
+			"specialty": "Allergy and Immunology",
+			"code": "1",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Clinical and Laboratory Immunology",
+					"code": "66",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Diagnostic Laboratory Immunology - Pediatric",
+					"code": "100",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Diagnostic Laboratory Immunology",
+					"code": "74",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Anesthesiology",
+			"code": "2",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Critical Care Medicine - Anesthesiology",
+					"code": "67",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pain Medicine - Anesthesiology",
+					"code": "68",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Anesthesiology",
+					"code": "197",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine",
+					"code": "170",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Colon and Rectal Surgery",
+			"code": "3",
+			"subspec": false,
+			"sub-specialties": []
+		},
+		{
+			"specialty": "Dermatology",
+			"code": "4",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Clinical & Lab Dermatological IM",
+					"code": "70",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Dermatopathology",
+					"code": "69",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Dermatology",
+					"code": "168",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Emergency Medicine",
+			"code": "5",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Emergency Medical Services",
+					"code": "199",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Critical Care Medicine - Internal Medicine",
+					"code": "73",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Medical Toxicology",
+					"code": "116",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Emergency Medicine",
+					"code": "117",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sports Medicine - Emergency",
+					"code": "118",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Undersea and Hyperbaric Medicine",
+					"code": "145",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Family Medicine",
+			"code": "6",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Primary Care",
+					"code": "200",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Adolescent Medicine",
+					"code": "135",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Geriatric Medicine",
+					"code": "71",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine",
+					"code": "170",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sports Medicine",
+					"code": "184",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Internal Medicine",
+			"code": "7",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Primary Care",
+					"code": "200",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Adolescent Medicine",
+					"code": "135",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Adult Congenital Heart Disease",
+					"code": "198",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Advanced Heart Failure and Transplant Cardiology",
+					"code": "196",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Cardiovascular Disease",
+					"code": "72",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Cardiac Electrophysiology",
+					"code": "121",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Critical Care Medicine - Internal Medicine",
+					"code": "73",
+					"subspec": true},
+				{
+					"sub-specialty": "Diagnostic Laboratory Immunology",
+					"code": "74",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Endocrinology, Diabetes and Metabolism",
+					"code": "75",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Gastroenterology",
+					"code": "76",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Geriatric Medicine",
+					"code": "71",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hematology",
+					"code": "78",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Infectious Disease",
+					"code": "79",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Interventional Cardiology",
+					"code": "160",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Medical Oncology",
+					"code": "80",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Nephrology",
+					"code": "81",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pulmonary Disease",
+					"code": "82",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Rheumatology",
+					"code": "83",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine",
+					"code": "170",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sports Medicine",
+					"code": "184",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Transplant Hepatology",
+					"code": "195",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Medical Genetics",
+			"code": "123",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Clinical Biochemical Genetics",
+					"code": "124",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Biochemical/Molecular Genetics*",
+					"code": "125",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Cytogenetics",
+					"code": "126",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Genetics (MD)",
+					"code": "127",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Molecular Genetics",
+					"code": "128",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Molecular Genetic Pathology",
+					"code": "171",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "PHD Medical Genetics",
+					"code": "163",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Neurological Surgery",
+			"code": "8",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Critical Care Medicine - Neruo Surgery",
+					"code": "84",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Nuclear Medicine",
+			"code": "9",
+			"subspec": false,
+			"sub-specialties": []
+		},
+		{
+			"specialty": "Obstetrics and Gynecology",
+			"code": "10",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Critical Care Medicine - OBGYN",
+					"code": "85",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Female Pelvic Medicine and Reconstructive Surgery",
+					"code": "182",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Gynecologic Oncology",
+					"code": "86",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Maternal and Fetal Medicine",
+					"code": "87",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Reproductive Endocrinology/Infertility",
+					"code": "88",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Ophthalmology",
+			"code": "11",
+			"subspec": false,
+			"sub-specialties": []
+		},
+		{
+			"specialty": "Orthopaedic Surgery",
+			"code": "12",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Orthopaedic Sports Medicine",
+					"code": "172",
+					"subspec": true},
+				{
+					"sub-specialty": "Hand Surgery - Orthopedic",
+					"code": "129",
+					"subspec": true}
+			]
+		},
+		{
+			"specialty": "Otolaryngology - (ENT, Ear Nose and Throat)",
+			"code": "13",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Otology/Neurotology",
+					"code": "130",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Otolaryngology",
+					"code": "131",
+					"subspec": true},
+				{
+					"sub-specialty": "Plastic Surgery Within the Head and Neck",
+					"code": "166",
+					"subspec": true},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true},
+				{
+					"sub-specialty": "Sleep Medicine",
+					"code": "170",
+					"subspec": true}
+			]
+		},
+		{
+			"specialty": "Pathology",
+			"code": "14",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Blood Banking/Transfusion Medicine",
+					"code": "89",
+					"subspec": true},
+				{
+					"sub-specialty": "Clinical Informatics",
+					"code": "192",
+					"subspec": true},
+				{
+					"sub-specialty": "Cytopathology",
+					"code": "91",
+					"subspec": true},
+				{
+					"sub-specialty": "Dermatopathology",
+					"code": "69",
+					"subspec": true},
+				{
+					"sub-specialty": "Immunopathology",
+					"code": "95",
+					"subspec": true},
+				{
+					"sub-specialty": "Neuropathology",
+					"code": "97",
+					"subspec": true},
+				{
+					"sub-specialty": "Radiosotopic Pathology",
+					"code": "99",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Chemical",
+					"code": "90",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Forensic",
+					"code": "93",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Hematology",
+					"code": "94",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Medical Microbiology",
+					"code": "96",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Molecular Genetic",
+					"code": "173",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Pediatric",
+					"code": "98",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Anatomic and Clinical",
+					"code": "132",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Anatomic",
+					"code": "133",
+					"subspec": true},
+				{
+					"sub-specialty": "Pathology - Clinical",
+					"code": "134",
+					"subspec": true}
+			]
+		},
+		{
+			"specialty": "Pediatric Specialties",
+			"code": "15",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Adolescent Medicine",
+					"code": "135",
+					"subspec": true},
+				{
+					"sub-specialty": "Child Abuse Pediatrics",
+					"code": "194",
+					"subspec": true},
+				{
+					"sub-specialty": "Developmental-Behavioral Pediatrics",
+					"code": "174",
+					"subspec": true},
+				{
+					"sub-specialty": "Diagnostic Laboratory Immunology - Pediatric",
+					"code": "100",
+					"subspec": true},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true},
+				{
+					"sub-specialty": "Medical Toxicology",
+					"code": "136",
+					"subspec": true},
+				{
+					"sub-specialty": "Neonatal-Perinatal Medicine",
+					"code": "108",
+					"subspec": true},
+				{
+					"sub-specialty": "Neurodevelopmental Disabilities - Pediatric",
+					"code": "175",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Cardiology",
+					"code": "101",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Critical Care Medicine",
+					"code": "102",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Emergency Medicine",
+					"code": "137",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Endocrinology",
+					"code": "103",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Gastroenterology",
+					"code": "104",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Hematology-Oncology",
+					"code": "105",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Infectious Diseases",
+					"code": "138",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Nephrology",
+					"code": "106",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Pulmonology",
+					"code": "107",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Rheumatology",
+					"code": "139",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Transplant Hepatology",
+					"code": "193",
+					"subspec": true},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Sports Medicine",
+					"code": "140",
+					"subspec": true},
+				{
+					"sub-specialty": "Pediatric Rehabilitation Medicine",
+					"code": "177",
+					"subspec": true}
+			]
+		},
+		{
+			"specialty": "Physical Medicine and Rehabilitation",
+			"code": "16",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Brain Injury Medicine",
+					"code": "191",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neuromuscular Medicine",
+					"code": "185",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pain Medicine - Physical Medicine and Rehabilitation",
+					"code": "165",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Rehabilitation Medicine",
+					"code": "177",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Spinal Cord Injury Medicine",
+					"code": "162",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sports Medicine",
+					"code": "184",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Plastic Surgery",
+			"code": "17",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Plastic Surgery Within the Head and Neck",
+					"code": "166",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hand Surgery - Plastic",
+					"code": "109",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Preventive Medicine",
+			"code": "18",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Aerospace Medicine",
+					"code": "141",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Occupational Medicine*",
+					"code": "142",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Public Health and General Preventive Medicine*",
+					"code": "143",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Informatics",
+					"code": "192",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Medical Toxicology",
+					"code": "144",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Undersea and Hyperbaric Medicine",
+					"code": "145",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Psychiatry and Neurology",
+			"code": "19",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Addiction Psychiatry",
+					"code": "149",
+					"subspec": true},
+				{
+					"sub-specialty": "Brain Injury Medicine",
+					"code": "191",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Child and Adolescent Psychiatry",
+					"code": "110",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Clinical Neurophysiology",
+					"code": "152",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Epilepsy",
+					"code": "190",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Forensic Psychiatry",
+					"code": "150",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Geriatric Psychiatry",
+					"code": "151",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neurodevelopmental Disabilities",
+					"code": "178",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neurodevelopmental Disabilities - Pediatric",
+					"code": "175",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neuromuscular Medicine",
+					"code": "185",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pain Medicine - Psychiatry and Neurology",
+					"code": "167",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Psychosomatic Medicine",
+					"code": "179",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine - Pediatric",
+					"code": "176",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Sleep Medicine",
+					"code": "170",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Vascular Neurology",
+					"code": "181",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neurology with Special Qualification in Child Neurology",
+					"code": "148",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Psychiatry",
+					"code": "146",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neurology",
+					"code": "147",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Radiology",
+			"code": "20",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Neuroradiology",
+					"code": "158",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Nuclear Radiology",
+					"code": "111",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Radiology",
+					"code": "156",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Vascular and Interventional Radiology",
+					"code": "157",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Diagnostic Radiology",
+					"code": "153",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Interventional Radiology and Diagnostic Radiology",
+					"code": "189",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Radiation Oncology",
+					"code": "154",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Radiological Physics",
+					"code": "155",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Fluoroscopy",
+					"code": "201",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Computed Tomography (CT)",
+					"code": "202",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Ultrasound",
+					"code": "203",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "MRI",
+					"code": "204",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Mamography",
+					"code": "205",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Surgery",
+			"code": "21",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "General Vascular Surgery",
+					"code": "112",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Complex General Surgical Oncology",
+					"code": "188",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Hospice and Palliative Medicine",
+					"code": "183",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Surgery",
+					"code": "113",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Surgery of the Hand",
+					"code": "114",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Surgical Critical Care",
+					"code": "115",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Thoracic and Cardiac Surgery",
+			"code": "22",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Congenital Cardiac Surgery",
+					"code": "187",
+					"subspec": true
+				}
+			]
+		},
+		{
+			"specialty": "Urology",
+			"code": "23",
+			"subspec": false,
+			"sub-specialties": [
+				{
+					"sub-specialty": "Female Pelvic Medicine and Reconstructive Surgery",
+					"code": "182",
+					"subspec": true
+				},
+				{
+					"sub-specialty": "Pediatric Urology",
+					"code": "186",
+					"subspec": true
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+development:
+  sessions:
+    default:
+      database: geocoded_providers
+      hosts:
+        - 0.0.0.0:27017
+      options:
+        pool_size: 35
+
+procuction:
+  sessions:
+    default:
+      database: geocoded_providers
+      hosts:
+        - 0.0.0.0:27017
+      options:
+        pool_size: 35
