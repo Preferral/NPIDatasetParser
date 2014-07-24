@@ -1,4 +1,4 @@
 module Locations
-	class PracticeAddress < BusinessAddress
-	end
+  class PracticeAddress < BusinessAddress
+  end
 end

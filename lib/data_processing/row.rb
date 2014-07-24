@@ -1,18 +1,30 @@
 module DataProcessing
-	class Row
-		def initialize(row)
-			@values = row#.split(",")
-			puts @values[5]
-			if @values.size != 329
-				puts @values.size
-				print @values
+  class Row
+    def initialize(row)
+      @values = row#.split(",")
+      puts @values[5]
+      if @values.size != 329
+        puts @values.size
+        print @values
 
-				print "\n"
-				print row
-				print "\n"
-			end
-		end
-	end
+        print "\n"
+        print row
+        print "\n"
+      end
+
+      def entity_type
+        entity_types = {
+          '1' => 'Individual',
+          '2' => 'Organization'
+        }
+        entity_types[@values[1]]
+      end
+
+      # def to_
+
+      # end
+    end
+  end
 end
 
 # 0    -->  "NPI",

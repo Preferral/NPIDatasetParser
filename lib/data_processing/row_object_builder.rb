@@ -1,56 +1,56 @@
 module DataProcessing
-	class RowObjectBuilder
-		attr_accessor :object
+  class RowObjectBuilder
+    attr_accessor :object
 
-		def initialize(row)
-			@values = row
-		end
+    def initialize(row)
+      @values = row
+    end
 
-		def objectify
-			if entity_type == 'Individual'
-				@object = create_individual_provider
-			elsif entity_type == 'Organization'
-				@object = create_organization_provider
-			else
-				raise 'Invalid Data'
-			end
-		end
+    def objectify
+      if entity_type == 'Individual'
+        @object = create_individual_provider
+      elsif entity_type == 'Organization'
+        @object = create_organization_provider
+      else
+        raise 'Invalid Data'
+      end
+    end
 
-		private
+    private
 
-		def entity_type
-			entity_types = {
-				'1' => 'Individual',
-				'2' => 'Organization'
-			}
-			entity_types[@values[1]]
-		end
+    def entity_type
+      entity_types = {
+        '1' => 'Individual',
+        '2' => 'Organization'
+      }
+      entity_types[@values[1]]
+    end
 
-		def create_individual_provider
-			Providers::Individual.create({
-				npi: @values[0],
-				replacement_npi: @values[2],
-				ein: @values[3],
-				last_name: @values[5],
-				first_name: @values[6],
-				middle_name: @values[7],
-				name_prefix: @values[8],
-				name_suffix: @values[9],
-				provider_credential: @values[10],
-				other_last_name: @values[13],
-				other_first_name: @values[14],
-				other_middle_name: @values[15],
-				other_name_prefix: @values[16],
-				other_name_suffix: @values[17],
-				other_provider_credential: @values[18],
-				other_last_name_type_code: @values[19]
-			})
-		end
+    def create_individual_provider
+      Providers::Individual.create({
+        npi: @values[0],
+        replacement_npi: @values[2],
+        ein: @values[3],
+        last_name: @values[5],
+        first_name: @values[6],
+        middle_name: @values[7],
+        name_prefix: @values[8],
+        name_suffix: @values[9],
+        provider_credential: @values[10],
+        other_last_name: @values[13],
+        other_first_name: @values[14],
+        other_middle_name: @values[15],
+        other_name_prefix: @values[16],
+        other_name_suffix: @values[17],
+        other_provider_credential: @values[18],
+        other_last_name_type_code: @values[19]
+      })
+    end
 
-		def create_organization_provider
-			# ...
-		end
-	end
+    def create_organization_provider
+      # ...
+    end
+  end
 end
 
 # 0    -->  "NPI",
