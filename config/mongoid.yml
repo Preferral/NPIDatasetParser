@@ -4,6 +4,7 @@ development:
       database: geocoded_providers
       hosts:
         - 0.0.0.0:27017
+      raise_not_found_error: false
       options:
         pool_size: 35
 

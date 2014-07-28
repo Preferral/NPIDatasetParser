@@ -13,6 +13,7 @@ module DataProcessing
       CSV.foreach(@csv_name) do |row|
         @row_index = $.
         process(row, methods) if row_assigned? && @row_index != 1
+        puts "\t\t\t#{@row_index}" if @row_index % 100 == 0 and row_assigned?
         break if @row_index > 1000
         raise "Wrong Size" if row.size != 329
       end
