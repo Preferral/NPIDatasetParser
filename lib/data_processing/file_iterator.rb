@@ -12,9 +12,12 @@ module DataProcessing
     def iterate_and_call(*methods)
       CSV.foreach(@csv_name) do |row|
         @row_index = $.
+        # sleep 0.02 if row_assigned?
         process(row, methods) if row_assigned? && @row_index != 1
+        # puts @row_index if row_assigned?
+        $processed_count_array[@row_index % @number_of_threads] += 1 if row_assigned?
         puts "\t\t\t#{@row_index}" if @row_index % 100 == 0 and row_assigned?
-        break if @row_index > 1000
+        break if @row_index > 500
         raise "Wrong Size" if row.size != 329
       end
     end
