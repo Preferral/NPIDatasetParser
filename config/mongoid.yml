@@ -8,11 +8,11 @@ development:
       options:
         pool_size: 35
 
-procuction:
+production:
   sessions:
     default:
-      database: geocoded_providers
-      hosts:
-        - 0.0.0.0:27017
+      uri: <%= ENV['MONGOHQ_URL'] %>
       options:
-        pool_size: 35
+        max_retries: 5
+        retry_interval: 1
+        timeout: 15
