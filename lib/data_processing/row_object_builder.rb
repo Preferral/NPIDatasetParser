@@ -14,6 +14,9 @@ module DataProcessing
       else
         raise 'Invalid Data'
       end
+      associate_taxonomies if @object
+      associate_addresses if @object
+      puts @object.name if @object
     end
 
     private
@@ -47,8 +50,54 @@ module DataProcessing
       })
     end
 
+    def associate_taxonomies
+      taxonomy_indexes = [47,50,51,54,55,58,59,62,63,66,67,
+                          70,71,74,75,78,79,82,83,86,87,90,
+                          91,94,95,98,99,102,103,106,314,
+                          315,316,317,318,319,320,321,322,
+                          323,324,325,326,327,328]
+      taxonomy_codes = taxonomy_indexes.map {|i| @values[i] }.reject!(&:blank?)
+
+      Taxonomies::Specialty.in(taxonomy: taxonomy_codes).each do |spec|
+        @object.specialties << spec
+      end
+    end
+
+    def associate_addresses
+      address1 = Locations::MailingAddress.create(
+        first_line:       (@values[20].blank? ? nil : @values[20]),
+        second_line:      (@values[21].blank? ? nil : @values[21]),
+        city:             (@values[22].blank? ? nil : @values[22]),
+        state:            (@values[23].blank? ? nil : @values[23]),
+        postal_code:      (@values[24].blank? ? nil : @values[24]),
+        country_code:     (@values[25].blank? ? nil : @values[25]),
+        telephone_number: (@values[26].blank? ? nil : @values[26]),
+        fax_number:       (@values[27].blank? ? nil : @values[27])
+      )
+      address2 = Locations::PracticeAddress.create(
+        first_line:       (@values[28].blank? ? nil : @values[28]),
+        second_line:      (@values[29].blank? ? nil : @values[29]),
+        city:             (@values[30].blank? ? nil : @values[30]),
+        state:            (@values[31].blank? ? nil : @values[31]),
+        postal_code:      (@values[32].blank? ? nil : @values[32]),
+        country_code:     (@values[33].blank? ? nil : @values[33]),
+        telephone_number: (@values[34].blank? ? nil : @values[34]),
+        fax_number:       (@values[35].blank? ? nil : @values[35])
+      )
+      @object.addresses << address1 if address1.valid?
+      @object.addresses << address2 if address2.valid?
+      @object.save
+    end
+
     def create_organization_provider
-      # ...
+      Providers::Organization.create({
+        npi: @values[0],
+        replacement_npi: @values[2],
+        ein: @values[3],
+        name: @values[4],
+        other_name: @values[11],
+        other_name_type_code: @values[12]
+      })
     end
   end
 end

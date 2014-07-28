@@ -13,5 +13,9 @@ module Providers
     field :other_name_suffix, type: String
     field :other_provider_credential, type: String
     field :other_last_name_type_code, type: String
+
+    def name
+      "#{name_prefix} #{first_name} #{last_name} #{name_suffix}, #{provider_credential}"
+    end
   end
 end

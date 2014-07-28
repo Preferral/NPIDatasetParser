@@ -1,4 +1,4 @@
-{ 
+{
 	"catagories": [
 		{
 			"name": "Individual or Groups (of Individuals)",
@@ -80,7 +80,7 @@
 									"taxonomy": "207LP3000X",
 									"active": true,
 									"description": "An anesthesiologist who has had additional skill and experience in and is primarily concerned with the anesthesia, sedation, and pain management needs of infants and children. A pediatric anesthesiologist generally provides services including the evaluation of complex medical problems in infants and children when surgery is necessary, planning and care for children before and after surgery, pain control, anesthesia and sedation for any procedures out of the operating room such as MRI, CT scan, and radiation therapy. Source: American Academy of Pediatrics [7/1/2006: new]"
-								}								
+								}
 							]
 						},
 						{
@@ -940,7 +940,7 @@
 									"description": "A pediatrician dedicated to the prevention and treatment of all respiratory diseases affecting infants, children and young adults. This specialist is knowledgeable about the growth and development of the lung, assessment of respiratory function in infants and children, and experienced in a variety of invasive and noninvasive diagnostic techniques. Source: American Board of Medical Specialties, 2007. www.abms.org [7/1/2007: definition added, source added; 7/1/2011: modified source]"
 								},
 								{
-									"name": "Pediatric Rheumatology", 
+									"name": "Pediatric Rheumatology",
 									"taxonomy": "2080P0216X",
 									"active": true,
 									"description": "A pediatrician who treats diseases of joints, muscle, bones and tendons. A pediatric rheumatologist diagnoses and treats arthritis, back pain, muscle strains, common athletic injuries and \"collagen\" diseases. Source: American Board of Medical Specialties, 2007. www.abms.org [7/1/2007: definition added, source added]"
@@ -1064,7 +1064,7 @@
 									"name": "Occupational Medicine",
 									"taxonomy": "2083X0100X",
 									"active": true,
-									"description": "Occupational medicine focuses on the health of workers, including the ability to perform work; the physical, chemical, biological, and social environments of the workplace; and the health outcomes of environmental exposures. Practitioners in this field address the promotion of health in the work place, and the prevention and management of occupational and environmental injury, illness, and disability. Source: American Board of Medical Specialties, 2007. www.abms.org [7/1/2007: definition added, source added]"							
+									"description": "Occupational medicine focuses on the health of workers, including the ability to perform work; the physical, chemical, biological, and social environments of the workplace; and the health outcomes of environmental exposures. Practitioners in this field address the promotion of health in the work place, and the prevention and management of occupational and environmental injury, illness, and disability. Source: American Board of Medical Specialties, 2007. www.abms.org [7/1/2007: definition added, source added]"
 								},
 								{
 									"name": "Preventive Medicine/Occupational-Environmental Medicine",
@@ -2857,7 +2857,7 @@
 									"description": "Definition to come..."
 								},
 								{
-									"name": "Emergency", 
+									"name": "Emergency",
 									"taxonomy": "364SE0003X",
 									"active": true,
 									"description": "Definition to come..."

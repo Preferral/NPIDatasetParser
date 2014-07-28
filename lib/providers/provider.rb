@@ -5,6 +5,7 @@ module Providers
     field :replacement_npi, type: String
     field :ein, type: String
 
-    embeds_many :addresses, class_name: 'Locations::BusinessAddress'
+    has_many :addresses, class_name: 'Locations::BusinessAddress', dependent: :destroy
+    has_and_belongs_to_many :specialties, class_name: 'Taxonomies::Specialty'
   end
 end
