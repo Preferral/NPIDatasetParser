@@ -1,107 +1,111 @@
 module DataProcessing
-  class Row
-    def initialize(row)
-      @values = row
-      if @values.size != 329
-        puts @values.size
-        print @values
+  module Stream
+    class Row
+      def initialize(row)
+        @values = CSV.parse(row).first
+        if @values.size != 329
+          puts "ROW SIZE: #{@values.size}"
+          # print @values
 
-        print "\n"
-        print row
-        print "\n"
-        raise "Wrong Size Row"
-      end
-
-      def active?
-        # 39   -->  "NPI Deactivation Date",
-        # 40   -->  "NPI Reactivation Date",
-        # if it has a Deactivation date and it doesn't have a reactivation date it's inactive
-        # if the opposite of the above, it's active
-        # DeMorgan's FTW
-        value_at_index(39).blank? || !value_at_index(40).blank?
-      end
-
-      def entity_type
-        type_code = value_at_index(1)
-        if type_code == '1'
-          'Individual'
-        elsif type_code == '2'
-          'Organization'
-        else
-          raise "Invalid Data - Entity Type Code: #{type_code}"
+          # print "\n"
+          # print row
+          # print "\n"
+          raise "Wrong Size Row"
         end
-      end
 
-      def taxonomy_codes
-        taxonomy_indexes = [47,50,51,54,55,58,59,62,63,66,67,
-                            70,71,74,75,78,79,82,83,86,87,90,
-                            91,94,95,98,99,102,103,106,314,
-                            315,316,317,318,319,320,321,322,
-                            323,324,325,326,327,328]
-        taxonomy_indexes.map {|i| value_at_index(i) }.reject!(&:blank?)
-      end
+        def active?
+          # 39   -->  "NPI Deactivation Date",
+          # 40   -->  "NPI Reactivation Date",
+          # if it has a Deactivation date and it doesn't have a reactivation date it's inactive
+          # if the opposite of the above, it's active
+          # DeMorgan's FTW
+          value_at_index(39).blank? || !value_at_index(40).blank?
+        end
 
-      def individual_provider_attributes
-        attrs = {
-          npi:                        value_at_index(0),
-          replacement_npi:            value_at_index(2),
-          ein:                        value_at_index(3),
-          last_name:                  value_at_index(5),
-          first_name:                 value_at_index(6),
-          middle_name:                value_at_index(7),
-          name_prefix:                value_at_index(8),
-          name_suffix:                value_at_index(9),
-          provider_credential:        value_at_index(10),
-          other_last_name:            value_at_index(13),
-          other_first_name:           value_at_index(14),
-          other_middle_name:          value_at_index(15),
-          other_name_prefix:          value_at_index(16),
-          other_name_suffix:          value_at_index(17),
-          other_provider_credential:  value_at_index(18),
-          other_last_name_type_code:  value_at_index(19)
-        }
-      end
+        def entity_type
+          type_code = value_at_index(1)
+          if type_code == '1'
+            'Individual'
+          elsif type_code == '2'
+            'Organization'
+          elsif type_code == 'Entity Type Code'
+            'HeaderRow'
+          else
+            raise "Invalid Data - Entity Type Code: #{type_code}"
+          end
+        end
 
-      def organization_provider_attributes
-        attrs = {
-          npi:                  value_at_index(0),
-          replacement_npi:      value_at_index(2),
-          ein:                  value_at_index(3),
-          name:                 value_at_index(4),
-          other_name:           value_at_index(11),
-          other_name_type_code: value_at_index(12)
-        }
-      end
+        def taxonomy_codes
+          taxonomy_indexes = [47,50,51,54,55,58,59,62,63,66,67,
+                              70,71,74,75,78,79,82,83,86,87,90,
+                              91,94,95,98,99,102,103,106,314,
+                              315,316,317,318,319,320,321,322,
+                              323,324,325,326,327,328]
+          taxonomy_indexes.map {|i| value_at_index(i) }.reject!(&:blank?)
+        end
 
-      def mailing_address_attributes
-        attrs = {
-          first_line:       value_at_index(20),
-          second_line:      value_at_index(21),
-          city:             value_at_index(22),
-          state:            value_at_index(23),
-          postal_code:      value_at_index(24),
-          country_code:     value_at_index(25),
-          telephone_number: value_at_index(26),
-          fax_number:       value_at_index(27)
-        }
-      end
+        def individual_provider_attributes
+          attrs = {
+            npi:                        value_at_index(0),
+            replacement_npi:            value_at_index(2),
+            ein:                        value_at_index(3),
+            last_name:                  value_at_index(5),
+            first_name:                 value_at_index(6),
+            middle_name:                value_at_index(7),
+            name_prefix:                value_at_index(8),
+            name_suffix:                value_at_index(9),
+            provider_credential:        value_at_index(10),
+            other_last_name:            value_at_index(13),
+            other_first_name:           value_at_index(14),
+            other_middle_name:          value_at_index(15),
+            other_name_prefix:          value_at_index(16),
+            other_name_suffix:          value_at_index(17),
+            other_provider_credential:  value_at_index(18),
+            other_last_name_type_code:  value_at_index(19)
+          }
+        end
 
-      def practice_address_attributes
-        attrs = {
-          first_line:       value_at_index(28),
-          second_line:      value_at_index(29),
-          city:             value_at_index(30),
-          state:            value_at_index(31),
-          postal_code:      value_at_index(32),
-          country_code:     value_at_index(33),
-          telephone_number: value_at_index(34),
-          fax_number:       value_at_index(35)
-        }
-      end
+        def organization_provider_attributes
+          attrs = {
+            npi:                  value_at_index(0),
+            replacement_npi:      value_at_index(2),
+            ein:                  value_at_index(3),
+            name:                 value_at_index(4),
+            other_name:           value_at_index(11),
+            other_name_type_code: value_at_index(12)
+          }
+        end
 
-      def value_at_index(index)
-        value = @values[index]
-        value.blank? ? nil : value
+        def mailing_address_attributes
+          attrs = {
+            first_line:       value_at_index(20),
+            second_line:      value_at_index(21),
+            city:             value_at_index(22),
+            state:            value_at_index(23),
+            postal_code:      value_at_index(24),
+            country_code:     value_at_index(25),
+            telephone_number: value_at_index(26),
+            fax_number:       value_at_index(27)
+          }
+        end
+
+        def practice_address_attributes
+          attrs = {
+            first_line:       value_at_index(28),
+            second_line:      value_at_index(29),
+            city:             value_at_index(30),
+            state:            value_at_index(31),
+            postal_code:      value_at_index(32),
+            country_code:     value_at_index(33),
+            telephone_number: value_at_index(34),
+            fax_number:       value_at_index(35)
+          }
+        end
+
+        def value_at_index(index)
+          value = @values[index]
+          value.blank? ? nil : value
+        end
       end
     end
   end
