@@ -31,7 +31,7 @@ module DataProcessing
       end
 
       def new_iterator(thread_number)
-        iterator = DataProcessing::FileIterator.new({
+        iterator = DataProcessing::File::Iterator.new({
           csv_name:       @csv_name,
           thread_number:  thread_number,
           thread_count:   @number_of_threads

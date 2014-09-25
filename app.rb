@@ -8,7 +8,7 @@ num_threads = 10
 
 $processed_count_array = Array.new(num_threads) { 0 }
 
-processor = DataProcessing::FileProcessor.new({csv_name: DATAFILE_NAME, num_threads: num_threads})
+processor = DataProcessing::File::Processor.new({csv_name: DATAFILE_NAME, num_threads: num_threads})
 processor.iterate
 
 print $processed_count_array

@@ -104,6 +104,18 @@ module DataProcessing
           value = @values[index]
           value.blank? ? nil : value
         end
+
+        def bussiness_state
+          value_at_index(23)
+        end
+
+        def practice_state
+          value_at_index(31)
+        end
+
+        def provider_name
+          "#{value_at_index(6)} #{value_at_index(5)}"
+        end
       end
     end
   end

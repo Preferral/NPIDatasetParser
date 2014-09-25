@@ -16,7 +16,7 @@ module DataProcessing
 
           $processed_count_array[@row_index % @number_of_threads] += 1 if row_assigned?
           puts "\t\t\t#{@row_index}" if @row_index % 100 == 0 and row_assigned?
-          break if @row_index > 4000
+          # break if @row_index > 4000
           raise "Wrong Size" if row.size != 329
         end
       end

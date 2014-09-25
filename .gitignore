@@ -1,4 +1,5 @@
 .env
+data/states
 data/*.csv
 data/*.zip
 data/*.pdf

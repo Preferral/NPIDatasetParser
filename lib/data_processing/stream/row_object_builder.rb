@@ -37,9 +37,6 @@ module DataProcessing
       def associate_taxonomies
         taxonomy_codes = @row.taxonomy_codes
 
-        # Taxonomies::Specialty.in(taxonomy: taxonomy_codes).each do |spec|
-        #   @object.specialties << spec
-        # end
         specs = @tax_cache.find(taxonomy_codes)
         @object.specialties = specs
       end
@@ -51,9 +48,6 @@ module DataProcessing
           (address1.valid? ? address1 : nil),
           (address2.valid? ? address2 : nil)
         ].compact
-        # @object.addresses << address1 if address1.valid?
-        # @object.addresses << address2 if address2.valid?
-        # @object.save
       end
     end
   end
