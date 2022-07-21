@@ -43,8 +43,8 @@ GEM
     rake (10.3.2)
     require_all (1.3.2)
     slop (3.6.0)
-    thread_safe (0.3.4)
-    tzinfo (1.2.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
